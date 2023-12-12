@@ -11,10 +11,24 @@ const SubmitAssignmentSchema = new Schema({
         ref: 'Course'
 
     },
+    "student": {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+
+    },
     "submittime": {
         type: String,
         required: false
 
+    },
+    "status": {
+        type: String,
+        default: 'pending'
+
+    },
+    "marks": {
+        type: Number,
+        required: false
     },
     "link": {
         type: String,
