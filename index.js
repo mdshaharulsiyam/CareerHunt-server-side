@@ -32,7 +32,7 @@ app.use(asignment)
 app.use(FeedBackRoute)
 
 app.get("/", (req, res) => {
-  res.send("doctor is running....");
+  res.send("server is running....");
 });
 
 app.all("*", (req, res, next) => {
